@@ -1,13 +1,12 @@
 import { Component } from "react";
 import HornedBeasts from "./HornedBeasts";
-import data from "./data.json"
 
-
+//Parent
 class Main extends Component {
     render() {
         return (
             <>
-                {data.map(element => <HornedBeasts {...element} />)}
+                {this.props.data.map(element => <HornedBeasts showWin={this.props.showWin} {...element} />)}
             </>
         )
     }

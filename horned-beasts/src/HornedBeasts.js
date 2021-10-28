@@ -1,4 +1,5 @@
 import { Component } from "react";
+import Button from "react-bootstrap/Button";
 
 
 class HornedBeasts extends Component {
@@ -22,6 +23,7 @@ class HornedBeasts extends Component {
                     <p> ♥ {this.state.clickedFavorite} </p>
                     <p id="dis">{this.props.description}</p>
                     <p>A {this.props.keyword} with {this.props.horns} horn(s)!</p>
+                    <Button onClick={() => this.props.showWin(this.props.title, this.props.image_url, this.props.description)}>More</Button>
                 </div>
             </>
         )
