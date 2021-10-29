@@ -6,7 +6,7 @@ class Main extends Component {
     render() {
         return (
             <>
-                {this.props.data.map(element => <HornedBeasts showWin={this.props.showWin} {...element} />)}
+                {this.props.beasts.map(element => <HornedBeasts beasts={this.props.beasts} showWin={this.props.showWin} {...element} />)}
             </>
         )
     }
